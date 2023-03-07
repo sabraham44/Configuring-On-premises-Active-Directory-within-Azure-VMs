@@ -56,8 +56,10 @@ In AD Users and Computers (ADUC), create Organizational Units (OU), called _EMPL
 <br />
 </p>
 <img src="https://i.imgur.com/kcgvzdE.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
-Moving forward we can use Jane_admin as the administrator account. <br/>
-Now we will join Client-1 to the domain (mydomain.com) from the azure portal we will change client-1's DNS settings to the DC's Private IP address. After you do that restart Client-1 from within the Azure portal. Our picture below shows verification that client-1 is on the DC-1 DNS. 
+Moving forward we can use Jane_admin as the administrator account. 
+<br/>
+<h3> Join Client-2 to Domain (mydomain.com)</h3>
+To start he joining process, set Client-1's DNS settings to the DC's Private IP addressl. Next, we restart Client-1 from within the Azure portal. Our picture below shows verification that client-1 is on the DC-1 DNS. 
 </p>
 <img src="https://i.imgur.com/jbrGTXW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -67,7 +69,7 @@ Now we will join Client-1 to the domain (mydomain.com) from the azure portal we 
 <p>
 </p>
 <p>
-We have to join Client-1 to the domain in order to do so navigate to your system settings and go to about. Off to the right select rename this pc (advanced). From there select to change the domain. Enter "mydomain.com" after that enter your credentials from mydomain.com\labuser. Your computer will restart and then client-1 will be a part of mydomain.com
+We have to join Client-1 to the domain in order to do so navigate to your system settings and go to about. From the menu on the right select 'Rename this PC (Advanced). Then select to change the domain and enter "mydomain.com" next we input our credentials from mydomain.com\labuser. Your computer will restart and client-1 will be a part of mydomain.com
 </p>
 <br />
 <p>
@@ -75,7 +77,7 @@ We have to join Client-1 to the domain in order to do so navigate to your system
 <img src="https://i.imgur.com/Ze0Em5e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Wonderufl Client-1 is now a part of the domain. Now we will set up remote desktop for non-administrative users on Client-1. We have to log into Client-1 as an admin and open system properties. Click on "Remote Desktop", allow "domain users" access to remote desktop. After completing those steps you should be able to log into Client-1 as a normal user.
+Client-1 has been successfully added to the domain. Now we will set up remote desktop for non-administrative users on Client-1. We have to log into Client-1 as an admin and open system properties. Click on "Remote Desktop", allow "domain users" access to remote desktop. After completing these steps you should be able to log into Client-1 as a normal user.
 </p>
 <br />
 
@@ -84,7 +86,7 @@ Wonderufl Client-1 is now a part of the domain. Now we will set up remote deskto
 <img src="https://i.imgur.com/SApOKiE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lastly to verify that noraml users can RDP into Client-1 we will use a script to generate thousands of users into the domain. We will input the script in powershell, after the users are created we will select one and RDP into Client-1.
+Finally, to verify that noraml users can RDP into Client-1, we will use a PowerShell script to generate thousands of users into the domain, after the users are created we will select one and RDP into Client-1.
 </p>
 <br />
 <img src="https://i.imgur.com/EzWG8ug.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
