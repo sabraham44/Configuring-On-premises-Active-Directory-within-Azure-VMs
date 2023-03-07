@@ -93,9 +93,9 @@ Finally, to verify that noraml users can RDP into Client-1, we will use a PowerS
 <p>
 <p>
   <p>
-<img src="https://i.imgur.com/Gkpe68K.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://user-images.githubusercontent.com/126641333/223316769-ea308f28-27b5-41b0-b053-47fd7e036ffa.png"/>
 </p>
 <img src="https://user-images.githubusercontent.com/126641333/223316246-8c842ff5-aede-4540-9301-57f866fe8732.png"/>
 <p>
-As you can see the Powershell script created a user with the username "bab.hubo" We were able to login to Client-1 with his credentials as a normal user. 
+As shown above the Powershell script created a many user and we are using one of those username "balow.muc" to login to Client-1 with the credentials as a normal user. 
 </p>
